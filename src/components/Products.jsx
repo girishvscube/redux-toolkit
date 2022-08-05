@@ -24,9 +24,14 @@ function Products() {
   };
   return (
     <div className="p-10">
+      <div className="flex flex-row">
       <Link to="/cart" className="w-full flex items-end ">
         <h1 className="underline"> Cart : ({value.length}) items</h1>
       </Link>
+      <Link to="/counter" className="w-full flex items-end ">
+        <h1 className="underline"> CounterApp</h1>
+      </Link>
+      </div>
       <h2 className="text-red-600">Products</h2>
       <div className="relative w-full h-full grid grid-rows-4 grid-flow-col gap-10">
         {products.map((data) => (
